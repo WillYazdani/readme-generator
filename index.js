@@ -81,7 +81,7 @@ const questions = () => {
 
         { //liscense
             type: "list",
-            name: "liscense",
+            name: "license",
             message: "Choose a liscense:",
             choices: ["MIT", "Creative Commons", "Apache 2.0", "None"]
         },
@@ -110,7 +110,12 @@ const questions = () => {
             }
         },
 
-    ]);
+    ])
+    //generate readme function
+    .then(data => {
+        const readme = generateMarkdown(data);
+        writeToFile("README.md", readme)
+    });
 };
 
 // TODO: Create a function to write README file
@@ -125,6 +130,7 @@ function writeToFile(fileName, data) {
                 ok: true,
                 message: "New file created."
             });
+            console.log("Your README has been created.");
         });
     })
 };
