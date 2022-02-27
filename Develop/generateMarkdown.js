@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license === 'MIT') {
-        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
     } else if (license === 'Creative Commons') {
-        return `[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)`
+        return `[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)`;
     } else if (license === 'Apache 2.0') {
-        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
     } else {
         return '';
     }
@@ -30,7 +30,7 @@ function generateMarkdown(data) {
     return `
 # ${data.title}
 
-render
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
@@ -51,7 +51,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${renderLicenseLink(data.licence)}
+${renderLicenseLink(data.license)}
 
 ## Contributing
 ${data.contributing}
@@ -62,7 +62,7 @@ ${data.tests}
 ## Questions
 Send your questions to: ${data.email}
 
-## &copy; ${new Date().getFullYear()} by [${data.title}](https://github.com/${data.title})
+### &copy; ${new Date().getFullYear()} by [${data.title}](https://github.com/${data.title})
 `;
 
 }
