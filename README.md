@@ -4,33 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Create a professional README file with a few simple questions
+An app that generates a README file from inquirer prompts.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-## Installation
-Run the Following command to install:
-sameple instructions
-
-## Usage
-same instructions
-
-## License
-Liscenced under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Contributing
-sample instructions
-
-## Tests
-sample instructions
-
-## Questions
-Send your questions to: yazd0006@gmail.com
-
-### &copy; 2022 by [README Generator](https://github.com/README Generator)
+## Video Demonstation
+https://drive.google.com/file/d/1lg2geASdWOwTXhvupZJpaL4S2djQxSax/view?usp=sharing
